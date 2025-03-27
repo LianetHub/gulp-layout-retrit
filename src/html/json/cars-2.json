@@ -1,0 +1,112 @@
+[
+    {
+        "className": " swiper-slide",
+        "id": "x1a",
+        "index": "02",
+        "name": "BMW X7 xDrive40i",
+        "engine": "Бензиновый",
+        "mileage": "62 000",
+        "year": "2021",
+        "price": "6 597 093"
+    },
+    {
+        "className": " swiper-slide",
+        "id": "y2b",
+        "index": "03",
+        "name": "Porsche Panamera 4s",
+        "engine": "Бензиновый",
+        "mileage": "51 000",
+        "year": "2021",
+        "price": "8 634 000"
+    },
+    {
+        "className": " swiper-slide",
+        "id": "z3c",
+        "index": "01",
+        "name": "Porsche Cayenne",
+        "engine": "Бензиновый",
+        "mileage": "37 000",
+        "year": "2021",
+        "price": "6 851 000 "
+    },
+    {
+        "className": " swiper-slide",
+        "id": "u4d",
+        "index": "02",
+        "name": "BMW X7 xDrive40i",
+        "engine": "Бензиновый",
+        "mileage": "62 000",
+        "year": "2021",
+        "price": "6 597 093"
+    },
+    {
+        "className": " swiper-slide",
+        "id": "v5e",
+        "index": "03",
+        "name": "Porsche Panamera 4s",
+        "engine": "Бензиновый",
+        "mileage": "51 000",
+        "year": "2021",
+        "price": "8 634 000"
+    },
+    {
+        "className": " swiper-slide",
+        "id": "w6f",
+        "index": "01",
+        "name": "Porsche Cayenne",
+        "engine": "Бензиновый",
+        "mileage": "37 000",
+        "year": "2021",
+        "price": "6 851 000 "
+    },
+    {
+        "className": " swiper-slide",
+        "id": "t7g",
+        "index": "02",
+        "name": "BMW X7 xDrive40i",
+        "engine": "Бензиновый",
+        "mileage": "62 000",
+        "year": "2021",
+        "price": "6 597 093"
+    },
+    {
+        "className": " swiper-slide",
+        "id": "s8h",
+        "index": "03",
+        "name": "Porsche Panamera 4s",
+        "engine": "Бензиновый",
+        "mileage": "51 000",
+        "year": "2021",
+        "price": "8 634 000"
+    },
+    {
+        "className": " swiper-slide",
+        "id": "r9i",
+        "index": "01",
+        "name": "Porsche Cayenne",
+        "engine": "Бензиновый",
+        "mileage": "37 000",
+        "year": "2021",
+        "price": "6 851 000 "
+    },
+    {
+        "className": " swiper-slide",
+        "id": "q0j",
+        "index": "02",
+        "name": "BMW X7 xDrive40i",
+        "engine": "Бензиновый",
+        "mileage": "62 000",
+        "year": "2021",
+        "price": "6 597 093"
+    },
+    {
+        "className": " swiper-slide",
+        "id": "p1k",
+        "index": "03",
+        "name": "Porsche Panamera 4s",
+        "engine": "Бензиновый",
+        "mileage": "51 000",
+        "year": "2021",
+        "price": "8 634 000"
+    }
+]

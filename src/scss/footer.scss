@@ -1,0 +1,174 @@
+.footer {
+	padding-bottom: 1.87rem;
+	// .footer__container
+	&__container {
+	}
+	// .footer__body
+	&__body {
+		border-radius: 0.375rem;
+		background: #f1efee;
+		color: #120b08;
+		display: flex;
+		flex-direction: column;
+		padding: rem(30) rem(20) rem(30) rem(25);
+		@media (min-width: $md4) {
+			padding: 3.12rem;
+			align-items: center;
+			text-align: center;
+		}
+	}
+	// .footer__logo
+	&__logo {
+	}
+	// .footer__title
+	&__title {
+		margin-top: 1.25rem;
+		max-width: 28rem;
+	}
+	// .footer__menu
+	&__menu {
+		margin-top: 2.25rem;
+		@media (min-width: $md4) {
+			margin-top: 1.88rem;
+		}
+	}
+	// .footer__menu-list
+	&__menu-list {
+		display: flex;
+		gap: rem(12);
+		row-gap: 0.5rem;
+		flex-wrap: wrap;
+		font-weight: 500;
+		font-size: rem(14);
+		@media (min-width: $md4) {
+			justify-content: center;
+			gap: 1.87rem;
+			row-gap: 0.5rem;
+			font-size: 0.875rem;
+		}
+	}
+	// .footer__menu-item
+	&__menu-item {
+	}
+	// .footer__menu-link
+	&__menu-link {
+		& span {
+			color: #a67e4e;
+			text-decoration: underline;
+		}
+		transition: color 0.3s ease;
+		@media (any-hover: hover) {
+			&:hover {
+				color: #a67e4e;
+			}
+		}
+	}
+	// .footer__bottom
+	&__bottom {
+		margin-top: 3.13rem;
+		display: grid;
+		width: 100%;
+
+		@media (min-width: $md3) {
+			align-items: end;
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+	// .footer__privacy
+	&__privacy {
+		color: rgba(18, 11, 8, 0.3);
+		font-size: 0.75rem;
+		font-weight: 500;
+		max-width: 12rem;
+		text-align: left;
+		order: 1;
+		margin-top: rem(15);
+		@media (min-width: $md3) {
+			margin-top: 0;
+			order: 0;
+		}
+	}
+	// .footer__main
+	&__main {
+		display: flex;
+		flex-direction: column;
+		order: -1;
+		align-items: flex-start;
+		@media (min-width: $md3) {
+			align-items: center;
+			order: 0;
+		}
+	}
+	// .footer__socials
+	&__socials {
+		font-size: 1.25rem;
+		display: flex;
+		gap: 0.62rem;
+	}
+	// .footer__social
+	&__social {
+		color: #a67e4e;
+		transition: color 0.3s ease;
+		@media (any-hover: hover) {
+			&:hover {
+				color: darken($color: #a67e4e, $amount: 10);
+			}
+		}
+	}
+	// .footer__phone
+	&__phone {
+		margin-top: 1.25rem;
+		color: rgba(18, 11, 8, 0.6);
+
+		font-size: 0.875rem;
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		font-weight: 500;
+		&::before {
+			font-size: 1.125rem;
+			color: #a67e4e;
+		}
+		transition: color 0.3s ease;
+		@media (any-hover: hover) {
+			&:hover {
+				color: #a67e4e;
+			}
+		}
+	}
+	// .footer__address
+	&__address {
+		margin-top: 1.25rem;
+		color: rgba(18, 11, 8, 0.6);
+		font-size: 0.875rem;
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		font-weight: 500;
+		&::before {
+			font-size: 1rem;
+			color: #a67e4e;
+		}
+	}
+	// .footer__privacy-policy
+	&__privacy-policy {
+		color: rgba(18, 11, 8, 0.3);
+		font-size: 0.75rem;
+		font-weight: 500;
+		transition: color 0.3s ease;
+		margin-top: rem(40);
+		width: fit-content;
+		margin-right: auto;
+		@media (min-width: $md3) {
+			text-align: right;
+			margin-top: 0;
+			margin-right: 0;
+			margin-left: auto;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				color: $accent;
+			}
+		}
+	}
+}
