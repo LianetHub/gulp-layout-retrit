@@ -1,11 +1,4 @@
 @font-face {
-                            font-family: 'Inter';
-                            font-display: swap;
-                            src: url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff");
-                            font-weight: 500;
-                            font-style: normal;
-                        }
-@font-face {
                             font-family: 'icons';
                             font-display: swap;
                             src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
@@ -20,10 +13,17 @@
                             font-style: normal;
                         }
 @font-face {
+                            font-family: 'Inter';
+                            font-display: swap;
+                            src: url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff");
+                            font-weight: 500;
+                            font-style: normal;
+                        }
+@font-face {
                             font-family: 'Manrope';
                             font-display: swap;
-                            src: url("../fonts/Manrope-SemiBold.woff2") format("woff2"), url("../fonts/Manrope-SemiBold.woff") format("woff");
-                            font-weight: 600;
+                            src: url("../fonts/Manrope-Medium.woff2") format("woff2"), url("../fonts/Manrope-Medium.woff") format("woff");
+                            font-weight: 500;
                             font-style: normal;
                         }
 @font-face {
@@ -36,7 +36,7 @@
 @font-face {
                             font-family: 'Manrope';
                             font-display: swap;
-                            src: url("../fonts/Manrope-Medium.woff2") format("woff2"), url("../fonts/Manrope-Medium.woff") format("woff");
-                            font-weight: 500;
+                            src: url("../fonts/Manrope-SemiBold.woff2") format("woff2"), url("../fonts/Manrope-SemiBold.woff") format("woff");
+                            font-weight: 600;
                             font-style: normal;
                         }

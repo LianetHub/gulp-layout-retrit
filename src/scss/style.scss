@@ -1083,6 +1083,9 @@ body {
 			width: 25.625rem;
 			order: 0;
 		}
+		@media (min-width: $md2) {
+			align-self: flex-start;
+		}
 
 		&::before {
 			content: "";

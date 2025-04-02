@@ -1,9 +1,9 @@
-<div id="order" class="popup">
+<div id="callback" class="popup">
     <div class="popup__body">
         <button type="button" class="popup__close" data-fancybox-close></button>
-        <h3 class="popup__title">Заявка на подбор авто</h3>
+        <h3 class="popup__title">Забронировать место на&nbsp;Темном ретрите</h3>
         <p class="popup__subtitle">
-            Заполните форму ниже, наш менеджер свяжется с вами
+            Оставьте свои данные, мы свяжемся с вами в ближайшее время
         </p>
         <form action="#" class="popup__form">
             <div class="popup__form-rows">
@@ -13,10 +13,14 @@
             <label class="form__checkbox">
                 <input type="checkbox" name="privacy" class="form__checkbox-input hidden" hidden>
                 <span class="form__checkbox-text">
-                    Я согласен с <a href="">политикой конфиденциальности</a>
+                    Я согласен(-ен) c <a href="">политикой конфиденциальности</a>
                 </span>
             </label>
-            <button class="form__btn btn btn-primary btn-fullwidth">Отправить</button>
+            <button class="form__btn btn btn-dark btn-fullwidth">Отправить</button>
         </form>
+        <div class="form__success" style="display: none;">
+            Спасибо! <br>
+            Данные успешно отправлены
+        </div>
     </div>
 </div>

@@ -37,11 +37,11 @@
 	<meta property="twitter:image:src" content="OG.png">
 	<!-- Twitter -->
 	<!-- plugnis -->
-	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20250327130737">
-	<link rel="stylesheet" href="css/libs/fancybox.css?_v=20250327130737">
+	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20250402093147">
+	<link rel="stylesheet" href="css/libs/fancybox.css?_v=20250402093147">
 	<!-- plugnis -->
-	<link rel="stylesheet" href="css/reset.min.css?_v=20250327130737">
-	<link rel="stylesheet" href="css/style.min.css?_v=20250327130737">
+	<link rel="stylesheet" href="css/reset.min.css?_v=20250402093147">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250402093147">
 </head>
 
 <body>
@@ -76,7 +76,7 @@
 					<div class="promo__offer">
 						<h1 class="promo__title title-lg">Темный ретрит с&nbsp;Наидой Шариповой</h1>
 						<p class="promo__description"> Глубокая трансформация через молчание и темноту: избавление от старых программ и восстановление внутреннего баланса. Обретение себя – целостность. </p>
-						<a href="#" class="promo__button btn btn-primary">Записаться на ретрит</a>
+						<a href="#callback" data-fancybox class="promo__button btn btn-primary">Записаться на ретрит</a>
 					</div>
 					<div class="promo__bottom">
 						<div class="promo__text">
@@ -172,7 +172,7 @@
 							<p class="waiting__text text-block"> Соединение с самим собой, принятие новых решений, пробуждение внутреннего света. </p>
 						</li>
 					</ul>
-					<a href="#" class="waiting__button btn btn-primary">Стать участником</a>
+					<a href="#callback" data-fancybox class="waiting__button btn btn-primary">Стать участником</a>
 				</div>
 			</section>
 			<section class="dark-retrit">
@@ -190,7 +190,7 @@
 					<div class="goal__content">
 						<div class="goal__column">
 							<p class="goal__text text-block"> Наида Шарипова использует свои знания в области Китайской метафизики, даосских традиций и учений для того, чтобы помочь каждому раскрыть свой потенциал, найти новые смыслы, ниточки счастья в соответствии со своей уникальной природой, найти ответы на важные жизненные вопросы. </p>
-							<a href="" class="goal__button btn btn-primary">Стать участником</a>
+							<a href="#callback" data-fancybox class="goal__button btn btn-primary">Стать участником</a>
 						</div>
 						<div class="goal__column">
 							<blockquote class="goal__quote title-md"> «В темноте и тишине ты обретаешь ясность, открывая глубины своего внутреннего мира» </blockquote>
@@ -298,7 +298,7 @@
 					</ul>
 					<div class="roadmap__info">
 						<p class="roadmap__description icon-info text-block"> Каждая программа продумывается индивидуально под&nbsp;запросы группы. Неизменными остаются дни в темноте. </p>
-						<a href="#" class="roadmap__btn btn btn-primary">Стать участником</a>
+						<a href="#callback" data-fancybox class="roadmap__btn btn btn-primary">Стать участником</a>
 					</div>
 				</div>
 			</section>
@@ -384,7 +384,7 @@
 						<div class="price__side">
 							<h3 class="price__subtitle title-md">10-дневный Темный <br> ретрит с Наидой Шариповой</h3>
 							<div class="price__amount title-md">от 4 000 $</div>
-							<a href="" class="btn btn-primary price__btn">Забронировать место</a>
+							<a href="#callback" data-fancybox class="btn btn-primary price__btn">Забронировать место</a>
 							<p class="price__note"> *Точная стоимость зависит от программы ретрита (каждый ретрит уникален, программы отличаются) </p>
 						</div>
 					</div>
@@ -499,11 +499,31 @@
 					</div>
 				</div>
 			</div>
-		</footer> <!-- plugnis -->
-		<script src="js/libs/swiper-bundle.min.js?_v=20250327130737"></script>
-		<script src="js/libs/fancybox.umd.js?_v=20250327130737"></script>
+		</footer>
+		<div id="callback" class="popup">
+			<div class="popup__body">
+				<button type="button" class="popup__close" data-fancybox-close></button>
+				<h3 class="popup__title">Забронировать место на&nbsp;Темном ретрите</h3>
+				<p class="popup__subtitle"> Оставьте свои данные, мы свяжемся с вами в ближайшее время </p>
+				<form action="#" class="popup__form">
+					<div class="popup__form-rows">
+						<input type="text" name="name" class="form__input" placeholder="Имя">
+						<input type="tel" name="phone" class="form__input" placeholder="+ 7 (999) 999-99-99">
+					</div>
+					<label class="form__checkbox">
+						<input type="checkbox" name="privacy" class="form__checkbox-input hidden" hidden>
+						<span class="form__checkbox-text"> Я согласен(-ен) c <a href="">политикой конфиденциальности</a>
+						</span>
+					</label>
+					<button class="form__btn btn btn-dark btn-fullwidth">Отправить</button>
+				</form>
+				<div class="form__success" style="display: none;"> Спасибо! <br> Данные успешно отправлены </div>
+			</div>
+		</div> <!-- plugnis -->
+		<script src="js/libs/swiper-bundle.min.js?_v=20250402093147"></script>
+		<script src="js/libs/fancybox.umd.js?_v=20250402093147"></script>
 		<!-- plugnis -->
-		<script src="js/app.min.js?_v=20250327130737"></script>
+		<script src="js/app.min.js?_v=20250402093147"></script>
 </body>
 
 </html>

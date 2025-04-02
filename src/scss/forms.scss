@@ -1,186 +1,117 @@
-// .form {
-// 	// .form__caption
-// 	&__caption {
-// 		font-size: 1.125rem;
-// 		font-weight: 500;
-// 		line-height: 140%;
-// 		text-align: center;
-// 		@media (min-width: $md4) {
-// 			font-size: 1rem;
-// 			font-weight: 400;
-// 			text-align: left;
-// 		}
-// 	}
-// 	// .form__field
-// 	&__field {
-// 		position: relative;
-// 		&::before {
-// 			position: absolute;
-// 			top: 50%;
-// 			transform: translateY(-50%);
-// 			left: 1rem;
-// 			color: #99a2b3;
-// 		}
-// 		.form__input {
-// 			border-radius: 0.5rem;
-// 			border: rem(1) solid #fff;
-// 			background: #fff;
-// 			font-weight: 500;
-// 			padding: 1rem 2.5rem;
-// 			&::placeholder {
-// 				opacity: 1;
-// 				color: #99a2b3;
-// 			}
-// 		}
-// 		&.hidden {
-// 			display: none;
-// 		}
-// 	}
-// 	// .form__input
-// 	&__input {
-// 		text-overflow: ellipsis;
-// 		transition: border-color 0.3s ease 0s, color 0.3s ease 0s;
-// 		width: 100%;
-// 		background: #fff;
-// 		padding: 0 0 0.94rem 0;
-// 		border: 0;
-// 		border-bottom: rem(1) solid #d7d7d7;
-// 		color: $text;
-// 		font-size: 0.875rem;
-// 		line-height: 150%;
-// 		&::placeholder {
-// 			opacity: 1;
-// 			color: rgba(43, 50, 57, 0.3);
-// 		}
+.form {
+	// .form__input
+	&__input {
+		text-overflow: ellipsis;
+		transition: border-color 0.3s ease 0s, color 0.3s ease 0s;
+		width: 100%;
+		background: #fff;
+		color: #120b08;
+		padding: rem(20);
+		border: 0;
+		border-radius: rem(6);
 
-// 		&:hover,
-// 		&:focus {
-// 			border-color: $text;
-// 		}
+		font-size: 0.875rem;
+		line-height: 150%;
+		&::placeholder {
+			opacity: 0.5;
+		}
 
-// 		&:disabled {
-// 			background: #ddd;
-// 			border-color: #ddd;
-// 		}
-// 		&._error {
-// 			outline: 1px solid #ba2028;
-// 			background: #fff1ed;
-// 		}
-// 	}
-// 	// .form__textarea
-// 	&__textarea {
-// 		height: rem(78);
-// 		resize: none;
-// 		text-overflow: ellipsis;
-// 		transition: border-color 0.3s ease 0s, color 0.3s ease 0s;
-// 		width: 100%;
-// 		background: #fff;
-// 		padding: 0 0 0.94rem 0;
-// 		border: 0;
-// 		border-bottom: rem(1) solid #d7d7d7;
-// 		color: $text;
-// 		font-size: 0.875rem;
-// 		line-height: 150%;
-// 		&::placeholder {
-// 			opacity: 1;
-// 			color: rgba(43, 50, 57, 0.3);
-// 		}
-// 		&:hover,
-// 		&:focus {
-// 			border-color: $text;
-// 		}
-// 		&:disabled {
-// 			background: #ddd;
-// 			border-color: #ddd;
-// 		}
-// 		&._error {
-// 			outline: 1px solid #ba2028;
-// 			background: #fff1ed;
-// 		}
-// 	}
-// 	// .form__checkbox
-// 	&__checkbox {
-// 		margin-top: 1.25rem;
-// 		display: block;
-// 	}
-// 	// .form__checkbox-input
-// 	&__checkbox-input {
-// 		&:checked {
-// 			& + .form__checkbox-text {
-// 				&::before {
-// 					@extend %ic, .icon-check;
-// 				}
-// 			}
-// 		}
-// 		&.error {
-// 			& + .form__checkbox-text {
-// 				&::before {
-// 					border: rem(1) solid red;
-// 				}
-// 			}
-// 		}
-// 	}
-// 	// .form__checkbox-text
-// 	&__checkbox-text {
-// 		position: relative;
-// 		display: block;
-// 		width: fit-content;
-// 		color: rgba(43, 50, 57, 0.3);
-// 		font-size: 0.75rem;
-// 		line-height: 150%;
-// 		padding: 0 0 0 1.25rem;
-// 		cursor: pointer;
-// 		user-select: none;
-// 		&::before {
-// 			content: "";
-// 			position: absolute;
-// 			top: 50%;
-// 			transform: translateY(-50%);
-// 			left: 0;
-// 			display: flex;
-// 			justify-content: center;
-// 			align-items: center;
-// 			border: rem(1) solid #2b3239;
-// 			color: #2b3239;
-// 			width: rem(15);
-// 			height: rem(15);
-// 			border-radius: rem(3);
-// 			display: flex;
-// 			justify-content: center;
-// 			align-items: center;
-// 		}
-// 		& a {
-// 			text-decoration: underline;
-// 			@media (any-hover: hover) {
-// 				&:hover {
-// 					text-decoration: none;
-// 				}
-// 			}
-// 		}
-// 	}
-// 	// .form__btn
-// 	&__btn {
-// 		margin-top: 1.25rem;
-// 	}
-// 	// .form__file
-// 	&__file {
-// 	}
-// 	// .form__file-input
-// 	&__file-input {
-// 	}
-// 	// .form__file-btn
-// 	&__file-btn {
-// 		font-size: 1.625rem;
-// 		color: #bdbdbd;
-// 		cursor: pointer;
-// 		transition: color 0.3s ease 0s;
-// 		@media (any-hover: hover) {
-// 			&:hover {
-// 				color: $accent;
-// 			}
-// 		}
-// 	}
-// }
+		&:hover,
+		&:focus {
+			border-color: $text;
+		}
+
+		&:disabled {
+			background: #ddd;
+			border-color: #ddd;
+		}
+		&._error {
+			outline: 1px solid #ba2028;
+			background: #fff1ed;
+		}
+	}
+
+	// .form__checkbox
+	&__checkbox {
+		margin-top: 1.25rem;
+		display: block;
+	}
+	// .form__checkbox-input
+	&__checkbox-input {
+		&:checked {
+			& + .form__checkbox-text {
+				&::before {
+					@extend %ic, .icon-check;
+				}
+			}
+		}
+		&.error {
+			& + .form__checkbox-text {
+				&::before {
+					border: rem(1) solid red;
+				}
+			}
+		}
+	}
+	// .form__checkbox-text
+	&__checkbox-text {
+		position: relative;
+		display: block;
+		width: fit-content;
+
+		font-size: 0.75rem;
+		line-height: 150%;
+		padding: 0 0 0 1.25rem;
+		cursor: pointer;
+		user-select: none;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: rem(1.5) solid #a67e4e;
+			color: #a67e4e;
+			width: rem(15);
+			height: rem(15);
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		& a {
+			text-decoration: underline;
+			color: #a67e4e;
+			@media (any-hover: hover) {
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	// .form__btn
+	&__btn {
+		margin-top: 1.25rem;
+		@media (min-width: $md4) {
+			min-height: rem(65);
+		}
+	}
+	&__success {
+		margin-top: rem(30);
+		text-align: center;
+		color: #fff;
+		font-weight: 500;
+		font-size: rem(28);
+		line-height: 125%;
+		letter-spacing: em(-1, 28);
+		background: #248b00;
+		border-radius: rem(6);
+		padding: rem(82) rem(20);
+	}
+}
 
 .btn {
 	position: relative;
@@ -257,6 +188,17 @@
 			&:hover {
 				background: #fff;
 				color: $text;
+			}
+		}
+	}
+	&.btn-dark {
+		background: #120b08;
+		border: rem(1) solid #120b08;
+		color: #fff;
+		@media (any-hover: hover) {
+			&:hover {
+				background: #f1efee;
+				color: #120b08;
 			}
 		}
 	}

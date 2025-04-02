@@ -222,10 +222,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
+
 })
-
-
-
 
 
 //  init slide toggle
