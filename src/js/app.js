@@ -41,6 +41,10 @@ document.addEventListener("DOMContentLoaded", () => {
         if (e.target.closest('.header__menu-toggler')) {
             toggleMenu();
         }
+        if (e.target.closest('.header__menu-link')) {
+            document.body.classList.remove('lock');
+            document.querySelector('.header').classList.remove('open-menu');
+        }
     });
 
     function toggleMenu() {
